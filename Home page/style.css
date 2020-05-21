@@ -1,3 +1,29 @@
-.body {
-	background-color: #cc0000;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap');
+
+body {
+	background-color: #fff;
+	font-family: "Source Sans Pro"
+}
+
+.bulk {
+	width: 96vw;
+	height: auto;
+	background-color: #fcfcff;
+	border: 2px solid #fef9ee;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	margin: 0 auto;
+;}
+
+h2 {
+	font-size: 30px;
+}
+
+p {
+	margin-left: 10px;
+	font-size: 22px;
+  }
+
+li {
+	margin-bottom: 10px;
 }
