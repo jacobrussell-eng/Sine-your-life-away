@@ -1,7 +1,8 @@
-#Sidharth                        20th December 2018
+#Sid and Adam                        20th December 2018
 
 import math
 import time
+import sys
 
 def combinations():
     valid = False
