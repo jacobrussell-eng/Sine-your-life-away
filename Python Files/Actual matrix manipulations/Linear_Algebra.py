@@ -1,12 +1,8 @@
 print("------------------------------------------------------------------------")
-print("")
-print("Welcome to the menu of linear algebra, please choose an option below:")
-print("")
-print("""
- (1) - matrix operations
- (2) - vector operations
- (3) - solving similtaneous equations""")
-print("")
+print("\n Welcome to the menu of linear algebra, please choose an option below:")
+print("""\n(1) - matrix operations
+(2) - vector operations
+(3) - solving similtaneous equations\n""")
 
 selection = input("What would you like to do? ")
 while selection != "1" and selection != "2" and selection != "3":
