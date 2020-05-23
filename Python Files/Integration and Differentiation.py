@@ -1,4 +1,4 @@
-#Sid and Adam                      ---Integration & Diffrenciation---
+#Sid and Adam                      ---Integration & Diffrentiation---
 
 import sys
 import time

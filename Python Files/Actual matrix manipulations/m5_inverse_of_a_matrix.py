@@ -41,13 +41,18 @@ temp_matrix_A_recip = np.concatenate((temp_top_row_matrix_A_recip, temp_bottom_r
 print('Below is the inverse of matrix A')
 print('')
 
-top_left_matrix_A_recip = (temp_matrix_A_recip.item((0, 0)) * (1 / det))
-top_right_matrix_A_recip = (temp_matrix_A_recip.item((0, 1)) * (1 / det))
-bottom_left_matrix_A_recip = (temp_matrix_A_recip.item((1, 0)) * (1 / det))
-bottom_right_matrix_A_recip = (temp_matrix_A_recip.item((1, 1)) * (1 / det))
+if det != 0:
+    top_left_matrix_A_recip = (temp_matrix_A_recip.item((0, 0)) * (1 / det))
+    top_right_matrix_A_recip = (temp_matrix_A_recip.item((0, 1)) * (1 / det))
+    bottom_left_matrix_A_recip = (temp_matrix_A_recip.item((1, 0)) * (1 / det))
+    bottom_right_matrix_A_recip = (temp_matrix_A_recip.item((1, 1)) * (1 / det))
 
-top_row_matrix_A_recip = np.array([[top_left_matrix_A_recip, top_right_matrix_A_recip]])
-bottom_row_matrix_A_recip = np.array([[bottom_left_matrix_A_recip, bottom_right_matrix_A_recip]])
-matrix_A_recip = np.concatenate((top_row_matrix_A_recip, bottom_row_matrix_A_recip), axis=0)
-print(matrix_A_recip)
-print('')
+
+    top_row_matrix_A_recip = np.array([[top_left_matrix_A_recip, top_right_matrix_A_recip]])
+    bottom_row_matrix_A_recip = np.array([[bottom_left_matrix_A_recip, bottom_right_matrix_A_recip]])
+    matrix_A_recip = np.concatenate((top_row_matrix_A_recip, bottom_row_matrix_A_recip), axis=0)
+    print(matrix_A_recip)
+    print('')
+
+else:
+    print("Determinant is zero, therefore operation is invalid")
